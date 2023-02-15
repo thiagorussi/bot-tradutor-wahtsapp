@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node api/server.js",
     "dev": "node api/server.js"
   },
   "dependencies": {
