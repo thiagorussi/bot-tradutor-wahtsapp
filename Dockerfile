@@ -10,7 +10,7 @@ COPY . /app
 # Install the application dependencies
 RUN npm install
 
-EXPOSE 80 443 8080
+EXPOSE 443
 
 # Define the entry point for the container
 CMD ["npm", "start"]
