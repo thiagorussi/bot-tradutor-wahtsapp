@@ -7,10 +7,7 @@ WORKDIR /app
 # Copy the application files into the working directory
 COPY . /app
 
-RUN apt-get update \
-    && apt-get install -y wget gnupg 
-    
-RUN apt-get install -y libgbm-dev
+
     
 RUN apt-get install chromium-browser
 
