@@ -9,7 +9,7 @@ dotenv.config();
 create({
   session: 'translate', //name of session
   multidevice: true, // for version not multidevice use false.(default: true)
-  headless: false, // Headless chrome (default: true)
+  headless: true, // Headless chrome (default: true)
 })
   .then((client) => start(client))
   .catch((error) => {
