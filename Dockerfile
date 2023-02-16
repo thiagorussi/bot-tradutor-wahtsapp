@@ -11,7 +11,6 @@ RUN apt-get update \
     && apt-get install -y wget gnupg 
     
 RUN apt-get install -y libgbm-dev
-RUN apt-get install libglib2.0-0
     
 RUN apt-get install chromium-browser
 
