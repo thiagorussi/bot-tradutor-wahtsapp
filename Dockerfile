@@ -7,11 +7,6 @@ WORKDIR /app
 # Copy the application files into the working directory
 COPY . /app
 
-
-    
-RUN apt-get update && \
-apt-get install chromium-browser
-
 RUN npm install
 
 # Expose the port the app runs in
