@@ -17,6 +17,19 @@ create({
     process.exit(1);
   });
 
+//new
+const client = new Client({
+    authStrategy: new LocalAuth(),
+    puppeteer: {
+        args: ['--no-sandbox'],
+    }
+})
+
+client.on('qr', qr => {
+    qrcode.generate(qr, { small: true })
+});
+//endnew
+
 function start(client) { //função inicial do bot
   client.onMessage((message) => {
 
