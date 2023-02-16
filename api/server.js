@@ -17,6 +17,13 @@ create({
     process.exit(1);
   });
 
+create().then((client) => {
+    client.on('qr', (qr) => {
+      console.log('QR Code:');
+      console.log(qr);
+    });
+});
+
 function start(client) { //função inicial do bot
   client.onMessage((message) => {
 
