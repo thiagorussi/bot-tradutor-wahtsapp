@@ -9,7 +9,7 @@ COPY . /app
 
 
     
-RUN apt-get install chromium-browser
+RUN sudo apt-get install chromium-browser
 
 RUN npm install
 
