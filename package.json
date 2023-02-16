@@ -12,6 +12,6 @@
     "axios": "^1.3.2",
     "dotenv": "^16.0.3",
     "venom-bot": "^4.2.0",
-    "qrcode-terminal": "github:gtanner/qrcode-terminal"
+    
   }
 }
