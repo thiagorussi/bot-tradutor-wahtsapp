@@ -22,7 +22,7 @@ function start(client) { //função inicial do bot
 
     async function translateText(text, to) { //função para traduzir o texto
       let response = await axios.post(`https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=${to}`,
-        [{ 'text': `${text}` }],
+        [{ 'Text': `${text}` }],
         {
           headers: {
             'Ocp-Apim-Subscription-Key': process.env.API_KEY,
